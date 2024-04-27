@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <link rel="icon" type="image/png/jpeg" href="MY_FAV.jpeg">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="welcome.css">
+</head>
+<body class="privacy-policy page-template-default page page-id-3 logged-in admin-bar no-customize-support elementor-default elementor-kit-5">
+
+<main id="content" class="site-main post-3 page type-page status-publish hentry" role="main">
+    <div class="main-page">
+        <h1 class="main-page-header">Save the Brain</h1>
+        <p class="main-page-description">Please complete the form below to register your interest in Saving Your Energy.</p>
+        <hr class="separation-line">
+        <div class="main-page-form-container">
+            <form id="volunteer-form">
+                <label for="first_name">FIRST NAME:</label>
+                <input type="text" id="first_name" name="first_name" required><br><br>
+
+                <label for="last_name">LAST NAME:</label>
+                <input type="text" id="last_name" name="last_name" required><br><br>
+
+                <label for="volunteer_group">YOUR BRAIN TYPE:</label>
+                <select id="volunteer_group" name="volunteer_group">
+                    <option value="general">GENIUS</option>
+                    <option value="food_drinks">ALCOHOLIC</option>
+                    <option value="security">EXAM TENSION</option>
+                    <option value="medical">DOES NOT HAVE A BRAIN</option>
+                </select><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</main>
+
+<script>
+    document.getElementById("volunteer-form").addEventListener("submit", function(event) {
+        // Prevent the default form submission
+        event.preventDefault();
+
+        // Redirect to calc.html
+        window.location.href = "calc.html";
+    });
+</script>
+
+</body>
+</html>
